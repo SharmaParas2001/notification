@@ -1,0 +1,55 @@
+// Notification.scss
+.notification {
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+  
+    &[data-unread="true"] {
+      cursor: pointer;
+      background-color: var(--very-light-grayish-blue);
+    }
+  }
+  
+  .post {
+    display: grid;
+    gap: .5em;
+  }
+  
+  .time {
+    color: var(--grayish-blue);
+  }
+  
+  .avatar {
+    width: 50px;
+    aspect-ratio: 1/1;
+  }
+  
+  .privateMessage {
+    background-color: var(--light-grayish-blue-1);
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+  }
+  
+  .notification-content {
+    display: flex;
+    align-items: start;
+    gap: .5rem;
+  }
+  
+  .unread {
+    width: .8rem;
+    height: .8rem;
+    background-color: var(--red);
+    border-radius: 100vmax;
+    display: inline-block;
+    margin-left: .2rem;
+  }
+
+.wrapper {
+    display: grid;
+    gap: .6rem;
+  }
+  

@@ -1,0 +1,41 @@
+// Header.scss
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .title {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+  
+      h1 {
+        font-size: var(--fs2);
+        line-height: 1;
+      }
+  
+      .badge {
+        background-color: var(--blue);
+        color: var(--white);
+        padding: .2rem .7rem;
+        margin-top: .2rem;
+        line-height: 1;
+        border-radius: var(--radius-sm);
+      }
+    }
+  
+    button {
+      font: inherit;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--very-dark-blue);
+      transition: color 200ms ease-in-out;
+  
+      &:hover,
+      &:focus {
+        color: var(--blue);
+      }
+    }
+  }
+  
